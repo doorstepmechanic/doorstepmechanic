@@ -13,12 +13,15 @@ export default function HomePage() {
 
       {/* Left Side - Image */}
       <div className="left-side">
-        <img
-          src="/images/Gemini_Generated_Image_8wk8ng8wk8ng8wk8.png"
-          alt="Welcome"
-          className="welcome-image"
-        />
-      </div>
+  <video
+    src="/images/Hailuo_Video_make the static image into ani_459863097865142279.mp4"
+    className="welcome-video"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
 
       {/* Right Side - Text & Buttons */}
       <div className="right-side">
