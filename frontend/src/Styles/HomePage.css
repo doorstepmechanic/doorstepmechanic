@@ -1,0 +1,125 @@
+/* Full screen split layout */
+.homepage-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #ffffff);
+}
+
+/* Left side image */
+.left-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#ffffff; 
+}
+
+.welcome-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.welcome-image:hover {
+  transform: scale(1.05);
+}
+
+/* Right side text & buttons */
+.right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+/* Role buttons */
+.role-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.role-btn {
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.role-btn h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.role-btn p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Specific button colors */
+.mechanic-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.mechanic-btn:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.customer-btn {
+  background: #10b981;
+  color: white;
+}
+
+.customer-btn:hover {
+  background: #059669;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .homepage-container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .role-buttons {
+    align-items: center;
+  }
+
+  .role-btn {
+    width: 80%;
+    text-align: center;
+  }
+}
