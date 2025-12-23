@@ -1,0 +1,57 @@
+﻿[36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mÔ£ô[39m 2 modules transformed.
+node.exe : [31mÔ£ù[39m Build failed in 57ms
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([31mÔ 
+   £ù[39m Build failed in 57ms:String) [], Remote  
+  Exception
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[31merror during build:
+[31m[vite]: Rollup failed to resolve import 
+"react-router-dom" from "C:/Users/zidan/OneDrive/Des
+ktop/doorstepMechanic/doorstepmechanic/frontend/src/
+main.jsx".
+This is most likely unintended because it can break 
+your application at runtime.
+If you do want to externalize this module 
+explicitly add it to
+`build.rollupOptions.external`[31m
+    at viteLog (file:///C:/Users/zidan/OneDrive/Desk
+top/doorstepMechanic/doorstepmechanic/frontend/node_
+modules/vite/dist/node/chunks/config.js:33634:57)
+    at file:///C:/Users/zidan/OneDrive/Desktop/doors
+tepMechanic/doorstepmechanic/frontend/node_modules/v
+ite/dist/node/chunks/config.js:33668:73
+    at onwarn (file:///C:/Users/zidan/OneDrive/Deskt
+op/doorstepMechanic/doorstepmechanic/frontend/node_m
+odules/@vitejs/plugin-react/dist/index.js:76:7)
+    at file:///C:/Users/zidan/OneDrive/Desktop/doors
+tepMechanic/doorstepmechanic/frontend/node_modules/v
+ite/dist/node/chunks/config.js:33668:28
+    at onRollupLog (file:///C:/Users/zidan/OneDrive/
+Desktop/doorstepMechanic/doorstepmechanic/frontend/n
+ode_modules/vite/dist/node/chunks/config.js:33663:63
+)
+    at onLog (file:///C:/Users/zidan/OneDrive/Deskto
+p/doorstepMechanic/doorstepmechanic/frontend/node_mo
+dules/vite/dist/node/chunks/config.js:33466:4)
+    at file:///C:/Users/zidan/OneDrive/Desktop/doors
+tepMechanic/doorstepmechanic/frontend/node_modules/r
+ollup/dist/es/shared/node-entry.js:21032:32
+    at Object.logger [as onLog] (file:///C:/Users/zi
+dan/OneDrive/Desktop/doorstepMechanic/doorstepmechan
+ic/frontend/node_modules/rollup/dist/es/shared/node-
+entry.js:22919:9)
+    at ModuleLoader.handleInvalidResolvedId (file://
+/C:/Users/zidan/OneDrive/Desktop/doorstepMechanic/do
+orstepmechanic/frontend/node_modules/rollup/dist/es/
+shared/node-entry.js:21663:26)
+    at file:///C:/Users/zidan/OneDrive/Desktop/doors
+tepMechanic/doorstepmechanic/frontend/node_modules/r
+ollup/dist/es/shared/node-entry.js:21621:26[39m

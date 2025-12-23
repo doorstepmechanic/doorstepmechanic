@@ -1,8 +1,11 @@
+import { useNavigate, Link } from "react-router-dom";
 import "../Styles/HomePage.css"
 
 export default function HomePage() {
+  const navigate = useNavigate();
+
   const handleSelect = (role) => {
-    console.log("Selected role:", role);
+    navigate(`/register?role=${role}`);
   };
 
   return (
@@ -19,6 +22,10 @@ export default function HomePage() {
 
       {/* Right Side - Text & Buttons */}
       <div className="right-side">
+        <div style={{position: 'absolute', top: '20px', right: '30px', zIndex: 10}}>
+           <Link to="/login" style={{textDecoration: 'none', color: '#c53030', fontWeight: 'bold'}}>Sign In</Link>
+        </div>
+
         <h1 className="welcome-title">
           Welcome to DoorstepMechanic
         </h1>
