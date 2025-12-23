@@ -1,37 +1,4 @@
-/* Full screen split layout */
-
-.homepage-container {
-  display: flex;
-  min-height: 100vh;
-  font-family: 'Inter', sans-serif;
-  
-}
-
-/* Left side image */
-.left-side {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:#ffffff; 
-}
-
-.welcome-image {
-  /* max-width: 100%;
-  max-height: 100%; */
-  width: 800px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  overflow: hidden;
-}
-
-.welcome-image:hover {
-  transform: scale(1.05);
-}
-
-
-
-/* Right side container with rounded corners on all sides */
+/* Right side container */
 .right-side {
   width: 50%;
   display: flex;
@@ -42,33 +9,6 @@
   font-family: 'Poppins', sans-serif;
   position: relative;
   overflow: hidden;
-  border-radius: 50px; /* rounded corners on all four sides */
-}
-
-/* Floating shapes */
-.right-side::before,
-.right-side::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-.right-side::before {
-  width: 200px;
-  height: 200px;
-  background: #f56565; /* soft red circle */
-  top: -50px;
-  right: -50px;
-}
-
-.right-side::after {
-  width: 150px;
-  height: 150px;
-  background: #fc8181; /* soft pink circle */
-  bottom: -30px;
-  left: -30px;
 }
 
 /* Title */
@@ -80,7 +20,6 @@
   line-height: 1.2;
   letter-spacing: -1px;
   position: relative;
-  z-index: 1;
 }
 
 /* Add underline gradient for style */
@@ -92,8 +31,6 @@
   background: linear-gradient(90deg, #f56565, #fc8181);
   border-radius: 4px;
   margin-top: 6px;
-  z-index: 1;
-  position: relative;
 }
 
 /* Subtitle / Text */
@@ -103,8 +40,6 @@
   margin-bottom: 40px;
   max-width: 420px;
   line-height: 1.6;
-  z-index: 1;
-  position: relative;
 }
 
 /* Buttons container */
@@ -112,8 +47,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  z-index: 1;
-  position: relative;
 }
 
 /* Button design */
@@ -133,7 +66,6 @@
   color: #c53030;
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 
 /* Button hover effect with background animation */
@@ -162,7 +94,7 @@
 /* Text inside button */
 .role-btn h2 {
   font-size: 1.2rem;
-  margin-right: 6px;
+  margin: 0;
   z-index: 1;
   position: relative;
 }
