@@ -81,6 +81,8 @@
   letter-spacing: -1px;
   position: relative;
   z-index: 1;
+    text-shadow: 0 3px 6px rgba(126, 40, 40, 0.54);
+
 }
 
 /* Add underline gradient for style */
@@ -118,9 +120,11 @@
 
 /* Button design */
 .role-btn {
-  padding: 16px 24px;
+  padding: 6px 16px;
   border-radius: 12px;
-  border: 2px solid transparent;
+  border: none;
+  outline: none;
+  /* border: 2px solid transparent; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -128,7 +132,7 @@
   transition: all 0.3s ease;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(162, 52, 52, 0.995);
   background: #fff; /* card-style */
   color: #c53030;
   position: relative;
@@ -174,6 +178,7 @@
   z-index: 1;
   position: relative;
 }
+
 
 /* Mechanic button accent */
 .mechanic-btn {
