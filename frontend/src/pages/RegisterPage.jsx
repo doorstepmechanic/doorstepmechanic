@@ -34,19 +34,7 @@ export default function RegisterPage() {
 
   return (
     <div className="auth-container">
-      {/* Left Side - Image */}
-      <div className="auth-left">
-         <video 
-           src="/images/F18W4VK4z0nHoDv7og.mp4" 
-           className="auth-image" 
-           autoPlay 
-           loop 
-           muted 
-           playsInline
-         />
-      </div>
-
-      {/* Right Side - Register Form */}
+      {/* Left Side - Register Form */}
       <div className="auth-right">
         <div className="auth-card">
           <h2 className="auth-title">Create Account</h2>
@@ -129,6 +117,18 @@ export default function RegisterPage() {
             </p>
           </div>
         </div>
+      </div>
+
+      {/* Right Side - Image */}
+      <div className="auth-left">
+         <video 
+           src="/images/F18W4VK4z0nHoDv7og.mp4" 
+           className="auth-image" 
+           autoPlay 
+           loop 
+           muted 
+           playsInline
+         />
       </div>
     </div>
   );
