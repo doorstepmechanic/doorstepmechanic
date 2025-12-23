@@ -44,7 +44,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 50px;
+    box-shadow: -10px 0 30px rgba(197, 48, 48, 0.366); /* left-side shadow */
+
   /* rounded corners on all four sides */
+
 }
 
 /* Floating shapes */
