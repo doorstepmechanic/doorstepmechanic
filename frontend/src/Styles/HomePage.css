@@ -2,7 +2,7 @@
 
 .homepage-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 795px;
   font-family: 'Inter', sans-serif;
 
 }
@@ -118,18 +118,17 @@
 .role-buttons {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   z-index: 1;
   position: relative;
 }
 
 /* Button design */
 .role-btn {
-  padding: 6px 16px;
-  border-radius: 12px;
+  padding: 1px 8px;
+  border-radius: 40px;
   border: none;
   outline: none;
-  /* border: 2px solid transparent; */
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -138,7 +137,7 @@
   transition: all 0.3s ease;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(131, 31, 31, 0.438);
   background: #fff; /* card-style */
   color: #c53030;
   position: relative;
@@ -172,7 +171,9 @@
 /* Text inside button */
 .role-btn h2 {
   font-size: 1.2rem;
+  margin: 0;
   margin-right: 6px;
+  margin-top: 15px;
   z-index: 1;
   position: relative;
 }
@@ -180,7 +181,7 @@
 .role-btn p {
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.6);
-  margin: 0;
+  margin-top: 5px;
   z-index: 1;
   position: relative;
 }
