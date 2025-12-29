@@ -2,7 +2,11 @@
 
 .homepage-container {
   display: flex;
+<<<<<<< HEAD
   min-height: 100vh;
+=======
+  min-height: 98vh;
+>>>>>>> 6bd5a96 (sliding)
   font-family: 'Inter', sans-serif;
   overflow: hidden;
 
@@ -30,8 +34,6 @@
   transform: scale(1.05);
 } */
 
-
-
 /* Right side container with rounded corners on all sides */
 .right-side {
   width: 50%;
@@ -46,9 +48,7 @@
   overflow: hidden;
   border-radius: 50px;
     box-shadow: -10px 0 30px rgba(197, 48, 48, 0.366); /* left-side shadow */
-
-  /* rounded corners on all four sides */
-
+    animation: slideInRight 1s forwards;
 }
 
 /* Floating shapes */
@@ -216,5 +216,17 @@
 
   .role-btn {
     width: 80%;
+  }
+}
+
+
+@keyframes slideInRight{
+  from{
+    transform: translate(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
   }
 }

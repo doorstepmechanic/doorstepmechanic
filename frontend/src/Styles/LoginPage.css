@@ -4,7 +4,7 @@
   min-height: 100vh;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #fff7f6, #ffffff);
+  background: linear-gradient(to right, #ffffff, #ffffff);
 }
 
 /* Left side - Login Form */
@@ -20,6 +20,8 @@
   overflow: hidden;
   border-radius: 50px;
   box-shadow: 10px 0 30px rgba(197, 48, 48, 0.366);
+   animation: slideInLeft 1s forwards;
+
 }
 
 /* Right side - Video */
@@ -178,5 +180,18 @@
   .login-input,
   .login-btn {
     width: 80%;
+  }
+}
+
+
+
+@keyframes slideInLeft{
+  from{
+    transform: translate(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0);
+    opacity: 1;
   }
 }
