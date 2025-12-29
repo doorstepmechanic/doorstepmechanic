@@ -2,13 +2,9 @@
 
 .homepage-container {
   display: flex;
-<<<<<<< HEAD
   min-height: 100vh;
-=======
   min-height: 98vh;
->>>>>>> 6bd5a96 (sliding)
   font-family: 'Inter', sans-serif;
-  overflow: hidden;
 
 }
 
@@ -30,9 +26,6 @@
   overflow: hidden;
 }
 
-/* .welcome-video:hover {
-  transform: scale(1.05);
-} */
 
 /* Right side container with rounded corners on all sides */
 .right-side {
