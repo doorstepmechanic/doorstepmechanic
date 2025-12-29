@@ -1,7 +1,8 @@
 /* Full screen split layout */
 .loginpage-container {
   display: flex;
-  min-height: 795px;
+  min-height: 100vh;
+  overflow: hidden;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #fff7f6, #ffffff);
 }

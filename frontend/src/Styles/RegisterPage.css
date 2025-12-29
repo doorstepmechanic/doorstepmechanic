@@ -1,7 +1,8 @@
 /* Full screen split layout */
 .registerpage-container {
   display: flex;
-  min-height: 795px;
+  height: 100vh;
+  overflow: hidden;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #fff7f6, #ffffff);
 }
@@ -12,7 +13,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 80px;
+  max-height: 100vh;
+  padding: 40px 80px;
   background: #fff7f6;
   font-family: 'Poppins', sans-serif;
   position: relative;

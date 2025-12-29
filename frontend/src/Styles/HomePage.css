@@ -2,8 +2,9 @@
 
 .homepage-container {
   display: flex;
-  min-height: 795px;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
 
 }
 
