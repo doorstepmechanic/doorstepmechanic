@@ -38,6 +38,7 @@
   height: 500px;
   object-fit: contain;
   border-radius: 16px;
+  pointer-events: none;
 }
 
 /* Floating shapes */
