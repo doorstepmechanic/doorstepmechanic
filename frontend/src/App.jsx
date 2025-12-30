@@ -1,5 +1,5 @@
-import React from 'react'
 import MainRouter from './MainRouter.jsx'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
