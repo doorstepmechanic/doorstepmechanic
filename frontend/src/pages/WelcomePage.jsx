@@ -1,7 +1,7 @@
 import { useNavigate, Link } from "react-router-dom";
-import "../Styles/HomePage.css"
+import "../Styles/WelcomePage.css"
 
-export default function HomePage() {
+export default function WelcomePage() {
   const navigate = useNavigate();
 
   const handleSelect = (role) => {
