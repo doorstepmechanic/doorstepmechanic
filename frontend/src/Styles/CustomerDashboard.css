@@ -1,64 +1,90 @@
 /* Main scroll container */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Prevent double scrollbars */
+}
+
 .scroll-container {
   height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  font-family: 'Poppins', sans-serif;
+  /* Modern font */
+  padding-bottom: 5vh;
+  /* Space at bottom */
 
   /* Hide scrollbar for Chrome, Safari and Opera */
-  .scroll-container::-webkit-scrollbar {
-    display: none;
-  }
-
-
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
+}
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 /* Each full-screen section */
 .scroll-section {
-  height: 90vh;
-  width: 95%;
+  height: 80vh;
+  /* Comfortably fill screen without touching edges */
+  width: 90%;
+  /* Slight side margins */
+  max-width: 1200px;
+  /* Cap width for large screens */
 
   position: sticky;
   top: 5vh;
+  /* Sit below navbar */
   margin: 5vh auto;
-  scroll-snap-align: start;
+  /* Vertical spacing */
+  scroll-snap-align: center;
 
-  /* Rounded corners */
+  /* Rounded corners & Visuals */
   border-radius: 40px;
   overflow: hidden;
-  /* Ensures content complies with rounded corners */
+  box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.15);
+  /* Deeper shadow for stacking */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Subtle border for definition */
+  backdrop-filter: blur(10px);
+  /* Glassmorphism hint */
 
-  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-
+  /* Content Alignment */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
+  /* Better contrast on colored backgrounds */
 
   font-size: 2rem;
+  transition: transform 0.3s ease;
 }
 
-/* Optional colors to visualize sections */
+/* Section Colors with Gradients */
 .section-1 {
-  background: #d5f27e;
+  background: linear-gradient(135deg, #d5f27e 0%, #aad842 100%);
+  color: #3e5212;
+  /* Darker text for light background */
 }
 
 .section-2 {
-  background: #f67b7b;
+  background: linear-gradient(135deg, #f67b7b 0%, #e05454 100%);
 }
 
 .section-3 {
-  background: #889df3;
+  background: linear-gradient(135deg, #889df3 0%, #5d75e0 100%);
 }
 
 .section-4 {
-  background: #f086e5;
+  background: linear-gradient(135deg, #f086e5 0%, #d45ec7 100%);
 }
 
 .section-5 {
-  background: #ffd6d6;
+  background: linear-gradient(135deg, #ffd6d6 0%, #ffabab 100%);
+  color: #7f1d1d;
 }
