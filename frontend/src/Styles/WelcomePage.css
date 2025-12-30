@@ -2,8 +2,7 @@
 
 .homepage-container {
   display: flex;
-  min-height: 100vh;
-  min-height: 98vh;
+  min-height: 98.5vh;
   font-family: 'Inter', sans-serif;
 
 }
@@ -31,6 +30,7 @@
 /* Right side container with rounded corners on all sides */
 .right-side {
   width: 50%;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -2,6 +2,7 @@ import "../../Styles/CustomerDashboard.css";
 
 export default function CustomerDashboard() {
   return (
+    
     <div className="scroll-container">
 
       <section className="scroll-section section-1">

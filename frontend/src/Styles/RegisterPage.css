@@ -1,7 +1,7 @@
 /* Full screen split layout */
 .registerpage-container {
   display: flex;
-  height: 98vh;
+  height: 98.5vh;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #ffffff, #ffffff);
 }
@@ -9,6 +9,7 @@
 /* Left side - Register Form */
 .register-left-side {
   width: 50%;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
