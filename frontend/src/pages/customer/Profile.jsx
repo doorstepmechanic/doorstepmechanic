@@ -1,4 +1,4 @@
-import "./../../Styles/home.css";
+import "./Home/home.css";
 
 export default function Profile() {
   return (

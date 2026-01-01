@@ -1,13 +1,15 @@
 .home-wrapper {
   position: relative;
-  height: calc(100vh - 60px); /* account for navbar */
+  height: calc(100vh - 60px);
+  /* account for navbar */
   margin-top: 60px;
 }
 
 /* Fixed background */
 .home-bg {
   position: fixed;
-  top: 60px; /* below navbar */
+  top: 60px;
+  /* below navbar */
   left: 0;
   right: 0;
   bottom: 0;
@@ -23,6 +25,17 @@
 
   height: calc(100vh - 60px);
   overflow-y: auto;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Sections */
