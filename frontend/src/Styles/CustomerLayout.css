@@ -1,0 +1,10 @@
+.customer-layout {
+  padding-top: 60px; /* navbar height */
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
