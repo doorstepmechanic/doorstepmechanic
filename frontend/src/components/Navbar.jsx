@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link ,Outlet} from "react-router-dom";
 import "../Styles/Navbar.css";
 
 const AppNavbar = () => {
   return (
+    <>
     <Navbar expand="lg" className="custom-navbar" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/customer/dashboard/home" className="logo">
@@ -53,6 +54,8 @@ const AppNavbar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+     <Outlet />
+    </>
   );
 };
 

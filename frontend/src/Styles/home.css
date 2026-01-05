@@ -1,0 +1,59 @@
+.home-wrapper {
+  height: 100vh;
+  background: #fff7f6;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Hide scrollbar */
+.home-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.home-wrapper {
+  scrollbar-width: none;
+}
+
+/* Fixed center content */
+.content {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Fade + slide animation */
+.fade {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay {
+  animation-delay: 0.1s;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #c53030;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #7f1d1d;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
